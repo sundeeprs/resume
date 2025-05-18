@@ -1,158 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sundeep Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/e4f467a8b9.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="sundeep_logo.jpg" class="logo"/>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
-            </nav>
-            <div class="row">
-                <div class="contact-left">
-                    <div class="header-text">
-                        <h1>Hello, I am <span>Sundeep Sharma</span> from USA</h1>
-                        <p>Java and Android Developer, Mobile Architect</p>
-                        <p>Scrum Master, Project Manager</p>
-                        <p><span>Founder startup </span></p>
-                        <p><a href="https://machinemindinnovation.com" target="_blank" rel="noopener noreferrer">MachineMindInnovation.com</a></p>
-                        <p><a href="http://minihomekitchen.com" target="_blank" rel="noopener noreferrer">miniHomeKitchen.com</a></p>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <div class="header-text">
-                        <h1><span>Certification</span></h1>
-                        <p>Sun Certified Java Developer SCJP 1.4</p>
-                        <p>Sun Certified Mobile Application Developer SCMAD 1.0</p>
-                        <p>Certified Scrum Master - Scrum.org </p>
-                        <p>Project Management Professional - PMP PMI.org</p>
-                        <p>Amazon AWS Cloud Practitioner</p>
-                    </div>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compitable" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sundeep Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e4f467a8b9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Sundeep_logo.jpg" class="logo"/>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="about.html">Contact Me</a></li>
+                        </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Android Developer/ Architect, Scrum Master, Project Manager, <span>Founder </span></p>
+                    <h1>Hello, I am <span>Sundeep Sharma</span> from USA</h1>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
+        <!--------------------------------------about------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
                     <div class="about-col-1">
-                        <img src="sundeep_full.png" alt="Sundeep Sharma" height="500 px";>
+                        <img src="images/sundeep_c2_1.jpeg">
                     </div>
-                </div>
-                <div class="contact-right">
                     <div class="about-col-2">
-                        <h3 class="sub-title">About Me</h3>
-                        <p class="header-text">An IT professional with 20 years of experience in software development and delivery. <br></p>
-                        <ul>
-                            <li>I have extensive knowledge of the project life cycle for mobile and web applications, utilizing various methodologies such as the Waterfall model and Agile Scrum. I also actively participate in Scrum sessions.</li>
-                            <li>Believe in Servant Leadership Principle.</li>
-                            <li>Excellent communication and interpersonal skills, flexible and versatile to new environments, self-motivated, a good team player and have worked in a multicultural environment.</li>
-                            <li>Published Android apps in Google Play store.</li>
-                            <li>Developed Temperature Alert Notification and report analysis using DHT22 sensor, ESP32WROOM Controller, IOT core, TimeStream Database, IOT Rules and Grafana.</li>
-                            <li>Google Matter - Thread using Silicon Labs Sparkfun Micro-controller M240P with Wi-Fi module + Neo Light + Matter Hub - Google Nest hub:</li>
-                            <li>Hands-on experience in developing IOT devices using AWS (Amazon Web Services) IOT Core, MQTT Protocol, DHT11/22 Sensors and ESP32 Micro-controller with Wi-Fi, Bluetooth module using Arduino Sketch.</li>
-                            <li>Play Badminton, Volleyball, Field Hockey, Kabaddi.</li>
-                            <li>Social Worker associated with <a href="https://www.ebai.org/">Eye Bank Of India</a>, <a href="https://www.nanhikali.org/">nanhikali.org</a>, and <a href="https://rangde.in/">Rang De.org</a></li>
-                        </ul>
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am Sundeep Sharma an IT professional with 20Year's of experiecne in software development and delivery. <br>
+                            <p><ui><li>Founder - minihomeKitchen.com  and ManchineMindInnovation.com</li></ui></p>
+                            <p><ui><li>Socail Worker associated with <a href="https://www.ebai.org/"> Eye Bank Of India</a>&nbsp&nbsp&nbsp<a href="https://www.nanhikali.org/">nanhikali.org</a>&nbsp&nbsp&nbsp<a href="https://rangde.in/">Rang De.org</a></li></ui></p>
+                            <p><ui><li>Play acoustic guitar.</li></ui></p>
+                            <p><ui><li>Proud father of two daughter.</li></ui></p>
 
-                        <div class="tab-title">
+                        </p>
+                        <div class="tab-title"> 
                             <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
                             <p class="tab-links" onclick="openTab('experience')">Experience</p>
                             <p class="tab-links" onclick="openTab('education')">Education</p>
                         </div>
                         <div id="skills" class="tab-contents active-tab">
-                            <ul class="header-text">
-                                <li><span>UI/UX</span><br>Designing Web App/ Interfaces.</li>
-                                <li><span>App Development</span><br>Building Android/ IOS apps.</li>
-                                <li><span>Web Development</span><br>Web Portal Development.</li>
-                                <li><span>IOT Device Development</span><br>Arduino Sketch, Microcontroller, C++</li>
-                                <li><span>Amazon/ Google Cloud/ Azure Cloud</span><br>Cloud Infrastructure management, Optimization, and Migration.</li>
-                                <li><span>Amazon Webhosting</span><br>Website development and hosting.</li>
+                            <ul>
+                                <li><spna>UI/UX</spna><br>Designing Web App/ Interfaces.</li>
+                                <li><spna>App Developemnt</spna><br>Building Android/ IOS apps.</li>
+                                <li><spna>Web Development</spna><br>Web Portal Development.</li>
+                                <li><spna>IOT Device Development</spna><br>Aurdino Sketch, Microcontroller, C++</li>
+                                <li><spna>Amazon/ Google Cloud/ Azur Cloud</spna><br>Cloud Infrastructure managment, Optimization and Migration.</li>
                             </ul>
                         </div>
                         <div id="experience" class="tab-contents">
-                            <ul class="header-text">
-                                <li><span>Java/ J2ME Game Developer</span><br>Designing and building mobile games for small devices like Nokia, Samsung, Motorola.</li>
-                                <li><span>Android Mobile App/ Architect</span><br>Building Android/ IOS mobile app and deploying them to App store and Play store.</li>
-                                <li><span>Scrum Master</span><br>Play Scrum Master role for multiple projects, facilitating scrum ceremonies, and mentoring team to follow scrum practices.</li>
-                                <li><span>Technical Project Manager</span><br>Experience in handling large projects, critical role in planning, executing, and finalizing projects of various sizes and complexities.</li>
+                            <ul>
+                                <li><spna>Java/ J2ME Game Developer</spna><br>Designing and Buiding mobile game for small devecie like Nokial, Samsung, Motorola.</li>
+                                <li><spna>Android Mobile App/ Architect</spna><br>Building Android/ IOS mobile app and deploy them to App store and Play store.</li>
+                                <li><spna>Scrum Master</spna><br>Play Scrum Master role, for multiple project, faciliting scrum ceremonies and mentoring team to follow scrum practices.</li>
+                                <li><spna>Technical Project Manager</spna><br>Experience in Handling large project,  critical role in planning, executing, and finalizing projects of various sizes and complexities.</li>
                             </ul>
                         </div>
                         <div id="education" class="tab-contents">
-                            <ul class="header-text">
-                                <li><span>Bachelor of Commerce (B.Com)</span><br>Graduated in Commerce with a major in Economics, Income Tax, and Business Administration from Guru Ghasi Das University, Bilaspur, INDIA</li>
-                                <li><span>Post Graduate in Social Work (M.S.W.)</span><br>Master In Social Work and Business Administration, from Pandit Ravi Shankar Shukla University, Raipur, INDIA</li>
-                                <li><span>Advanced Diploma In Computer Language</span><br>Major in Java, Oracle, Networking, from C-DAC, Pune, Maharashtra, INDIA</li>
+                            <ul>
+                                <li><spna>Bachelor of Commerce(B.Com)</spna><br>Graduated in Commerce with major as Economics, Income Tax,  and Business Administration<BR>from Guru Ghasi Das University, Bilaspure, INDIA</li>
+                                <li><spna>Post Graduate in Social Work(M.S.W.)</spna><br>Master In Social Work and Business Administration, from Pandit Ravi Shankar Shukla University, Raipur, INIDA</li>
+                                <li><spna>Advance Diploma In Computer ALnguage</spna><br>Major as Java, Oracle, Networking,<br>fromC-DAC, Pune, Maharastra, INDIA</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>&nbspsundeeprs@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>&nbsp+1(864)-365-9276</p>
-                    <div class="social-icon">
-                        <a href="https://www.linkedin.com/in/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.github.com/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <!------------------My Service -------------->
+        <div class="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="service-list">
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development and  Design</h2>
+                        <!--<p>Hello How are you?</p>-->
+                        <a href="#">Learn more!</a>
                     </div>
-                    <a href="Resume Sundeep Sharma.pdf" download class="btn btn2">Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form name="contactForm">
-                        <input type="text" name="name" placeholder="Your Name" required style="color:black;">
-                        <input type="email" name="email" placeholder="Your Email" required style="color:black;">
-                        <textarea name="message" rows="6" placeholder="Your Message" style="color:black;"></textarea>
-                        <button type="submit" class="btn bt2" onclick="submitForm()">Submit</button>
-                    </form>
+                
+                    <div>
+                        <i class="fa-sharp fa-solid fa-bars-progress"></i>
+                        <h2>Web Site and Portal Development</h2>
+                        <p><a href="http://www.minihomekitchen.com" target="_blank" rel="noopener noreferrer">miniHomeKitchen</a></p>
+                        <p><a href="http://www.sundeepsharma.com" target="_blank" rel="noopener noreferrer">Sundeep Sharma</a></p>
+                        <a href="#">Learn more!</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>IOT Home Automation </h2>
+                        <p>Automate home appliance/ Electronic devices i.e. Light, Fan, Garage door, Humidifier, Security System<br>
+                        Using Microcontroller(ESP32,Sparkfun, M5D) Aurdino Sketch and Simply Studio 5.0</p>
+                        <br>
+                        <p>Control living room Neo light i.e. Brightness, Contrast using Google Hub and Matter protocol using Sparkfun M240P microcontroller and WiFi module.</p>
+
+                        <a href="#">Learn more!</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!---------------My Work/ portfolio--------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/my_app_work.jpeg">
+                        <div class="layer">
+                            <h1>Mobile Apps</h1>
+                        <p style="word-wrap: break-word;">Mobile apps to provide online <br>services for banking, entertainment and day to day activity.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>    
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/mywork_2.jpeg">
+                        <div class="layer">
+                            <h1>Web Site Development</h1>
+                            <p>The app connect you to talented people around you and across the world.<br>Download it from App store.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/my_app_work.jpeg">
+                        <div class="layer" style="  word-wrap: break-word;">
+                            <h1>Social Media App</h1>
+                            <p style="word-wrap: break-word; word-break: break-all;">The app connect you to talented people around you and across the world.<br>Download it from App store.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-----------------Contact Me------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contct-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>&nbspsundeeprs@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>&nbsp+1(864)-365-9276</p>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="/images/Resume Sundeep Sharma.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contct-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn bt2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>
         var tablinks = document.getElementsByClassName('tab-links');
         var tabcontents = document.getElementsByClassName('tab-contents');
 
-        function openTab(tabname) {
-            for(tablink of tablinks) {
-                tablink.classList.remove('active-links');
+        function openTab(tabName){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
             }
-            for(tabcontent of tabcontents) {
-                tabcontent.classList.remove('active-tab');
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classList.add('active-links');
-            document.getElementById(tabname).classList.add('active-tab');
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabName).classList.add("active-tab");
         }
+    </script>    
 
-        function submitForm() {
-            // Add form submission logic here
-            event.preventDefault();
-            alert('Form submitted successfully!');
-        }
-    </script>
-</body>
+    </body>
 </html>
