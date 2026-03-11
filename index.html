@@ -1,191 +1,668 @@
 <!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compitable" content="IE-Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sundeep Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/e4f467a8b9.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="sundeep_logo.jpg" class="logo"/>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="about.html">Contact Me</a></li>
-                        </ul>
-                </nav>
-                <div class="header-text">
-                    <p>Android Developer/ Architect, Scrum Master, Project Manager, <span>Founder </span></p>
-                    <h1>Hello, I am <span>Sundeep Sharma</span> from USA</h1>
-                </div>
-            </div>
-        </div>
-        <!--------------------------------------about------------->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="sundeep_c2_1.jpeg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I am Sundeep Sharma an IT professional with 20Year's of experiecne in software development and delivery. <br>
-                            <p><ui><li>Founder - minihomeKitchen.com  and ManchineMindInnovation.com</li></ui></p>
-                            <p><ui><li>Socail Worker associated with <a href="https://www.ebai.org/"> Eye Bank Of India</a>&nbsp&nbsp&nbsp<a href="https://www.nanhikali.org/">nanhikali.org</a>&nbsp&nbsp&nbsp<a href="https://rangde.in/">Rang De.org</a></li></ui></p>
-                            <p><ui><li>Play acoustic guitar.</li></ui></p>
-                            <p><ui><li>Proud father of two daughter.</li></ui></p>
+<html lang="en">
 
-                        </p>
-                        <div class="tab-title"> 
-                            <p class="tab-links active-links" onclick="openTab('skills')">Skills</p>
-                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
-                        </div>
-                        <div id="skills" class="tab-contents active-tab">
-                            <ul>
-                                <li><spna>UI/UX</spna><br>Designing Web App/ Interfaces.</li>
-                                <li><spna>App Developemnt</spna><br>Building Android/ IOS apps.</li>
-                                <li><spna>Web Development</spna><br>Web Portal Development.</li>
-                                <li><spna>IOT Device Development</spna><br>Aurdino Sketch, Microcontroller, C++</li>
-                                <li><spna>Amazon/ Google Cloud/ Azur Cloud</spna><br>Cloud Infrastructure managment, Optimization and Migration.</li>
-                            </ul>
-                        </div>
-                        <div id="experience" class="tab-contents">
-                            <ul>
-                                <li><spna>Java/ J2ME Game Developer</spna><br>Designing and Buiding mobile game for small devecie like Nokial, Samsung, Motorola.</li>
-                                <li><spna>Android Mobile App/ Architect</spna><br>Building Android/ IOS mobile app and deploy them to App store and Play store.</li>
-                                <li><spna>Scrum Master</spna><br>Play Scrum Master role, for multiple project, faciliting scrum ceremonies and mentoring team to follow scrum practices.</li>
-                                <li><spna>Technical Project Manager</spna><br>Experience in Handling large project,  critical role in planning, executing, and finalizing projects of various sizes and complexities.</li>
-                            </ul>
-                        </div>
-                        <div id="education" class="tab-contents">
-                            <ul>
-                                <li><spna>Bachelor of Commerce(B.Com)</spna><br>Graduated in Commerce with major as Economics, Income Tax,  and Business Administration<BR>from Guru Ghasi Das University, Bilaspure, INDIA</li>
-                                <li><spna>Post Graduate in Social Work(M.S.W.)</spna><br>Master In Social Work and Business Administration, from Pandit Ravi Shankar Shukla University, Raipur, INIDA</li>
-                                <li><spna>Advance Diploma In Computer ALnguage</spna><br>Major as Java, Oracle, Networking,<br>fromC-DAC, Pune, Maharastra, INDIA</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Sundeep Sharma | AI Cloud Architect</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #0a0f1c;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* NAV */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            background: #0a0f1c;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 120px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            color: #aaa;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            background: #00d4ff;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .btn-outline {
+            background: none;
+            border: 1px solid #00d4ff;
+            color: #00d4ff;
+        }
+
+        /* SECTION */
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* CARDS */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #121a2f;
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            background: #1a2545;
+        }
+
+        /* TIMELINE */
+
+        .timeline {
+            border-left: 3px solid #00d4ff;
+            padding-left: 25px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        .timeline-item h3 {
+            color: #00d4ff;
+        }
+
+        /* SKILLS */
+
+        .skill {
+            margin-bottom: 15px;
+        }
+
+        .progress {
+            background: #1a2545;
+            height: 8px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #00d4ff;
+        }
+
+        /* STATS */
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .stat h2 {
+            font-size: 40px;
+            color: #00d4ff;
+        }
+
+        /* CONTACT */
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: none;
+        }
+
+        #chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background: #111827;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        #chat-header {
+            background: #00d4ff;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        #chat-body {
+            height: 200px;
+            overflow-y: auto;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        #chat-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+        }
+
+        .tech-grid {
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 20px;
+        }
+
+        .tech {
+
+            background: #1f2937;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.3s;
+
+        }
+
+        .tech:hover {
+
+            transform: scale(1.1);
+            background: #00d4ff;
+            color: black;
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #050914;
+            margin-top: 40px;
+        }
+
+        @media(max-width:768px) {
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="container">
+
+        <h2>Sundeep</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero container">
+
+        <div class="hero-text">
+
+            <h1>Sundeep <span>Sharma</span></h1>
+
+            <h3>AI • Cloud • Mobile Architect</h3>
+
+            <p>
+
+                20+ years building mobile platforms, IoT systems and AI cloud
+                solutions for companies including Honda, Whirlpool, Verizon and BMW.
+
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#" class="btn btn-outline">Download Resume</a>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="section container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p style="text-align:center;max-width:800px;margin:auto">
+
+            Technology leader passionate about building intelligent systems combining
+            AI, mobile platforms, IoT devices and cloud infrastructure.
+            Experienced in leading global engineering teams and delivering
+            enterprise-scale solutions.
+
+        </p>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="section container">
+
+        <div class="stats">
+
+            <div class="stat">
+                <h2 class="counter" data-target="20">0</h2>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="stat">
+                <h2 class="counter" data-target="50">0</h2>
+                <p>Projects Delivered</p>
+            </div>
+
+            <div class="stat">
+                <h2 class="counter" data-target="10">0</h2>
+                <p>Enterprise Clients</p>
             </div>
 
         </div>
-        <!------------------My Service -------------->
-        <div class="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="service-list">
-                    <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>App Development and  Design</h2>
-                        <!--<p>Hello How are you?</p>-->
-                        <a href="#">Learn more!</a>
-                    </div>
-                
-                    <div>
-                        <i class="fa-sharp fa-solid fa-bars-progress"></i>
-                        <h2>Web Site and Portal Development</h2>
-                        <p><a href="http://www.minihomekitchen.com" target="_blank" rel="noopener noreferrer">miniHomeKitchen</a></p>
-                        <p><a href="http://www.sundeepsharma.com" target="_blank" rel="noopener noreferrer">Sundeep Sharma</a></p>
-                        <a href="#">Learn more!</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>IOT Home Automation </h2>
-                        <p>Automate home appliance/ Electronic devices i.e. Light, Fan, Garage door, Humidifier, Security System<br>
-                        Using Microcontroller(ESP32,Sparkfun, M5D) Aurdino Sketch and Simply Studio 5.0</p>
-                        <br>
-                        <p>Control living room Neo light i.e. Brightness, Contrast using Google Hub and Matter protocol using Sparkfun M240P microcontroller and WiFi module.</p>
 
-                        <a href="#">Learn more!</a>
-                    </div>
-                </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience" class="section container">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>Wipro – Project Manager</h3>
+                <p>Client: Honda AFEELA EV</p>
+                <p>Managing $3M manufacturing IT initiatives.</p>
             </div>
-        </div>
-        <!---------------My Work/ portfolio--------->
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="my_app_work.jpeg">
-                        <div class="layer">
-                            <h1>Mobile Apps</h1>
-                        <p style="word-wrap: break-word;">Mobile apps to provide online <br>services for banking, entertainment and day to day activity.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>    
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="mywork_2.jpeg">
-                        <div class="layer">
-                            <h1>Web Site Development</h1>
-                            <p>The app connect you to talented people around you and across the world.<br>Download it from App store.</p>
-                            <a href="#"><i class="fa-solid fa-link"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="my_app_work.jpeg">
-                        <div class="layer" style="  word-wrap: break-word;">
-                            <h1>Social Media App</h1>
-                            <p style="word-wrap: break-word; word-break: break-all;">The app connect you to talented people around you and across the world.<br>Download it from App store.</p>
-                            <a href="#"><i class="fa-solid fa-link"></i></a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn">See more</a>
+
+            <div class="timeline-item">
+                <h3>Metmox – Mobile Architect</h3>
+                <p>Client: Whirlpool</p>
+                <p>Led 22-member mobile development team.</p>
             </div>
-        </div>
-        <!-----------------Contact Me------------->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contct-left">
-                        <h1 class="sub-title">Contact me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>&nbspsundeeprs@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>&nbsp+1(864)-365-9276</p>
-                        <div class="social-icon">
-                            <a href="https://www.linkedin.com/in/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/sundeeprs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <a href="Resume Sundeep Sharma.pdf" download class="btn btn2">Download Resume</a>
-                    </div>
-                    <div class="contct-right">
-                        <form>
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn bt2">Submit</button>
-                        </form>
-                    </div>
-                </div>
+
+            <div class="timeline-item">
+                <h3>InfoVision – Senior Android Developer</h3>
+                <p>Client: Verizon</p>
             </div>
+
+            <div class="timeline-item">
+                <h3>Atos – Android Architect</h3>
+                <p>Client: BMW</p>
+            </div>
+
         </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="section container">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Agentic AI Manufacturing Intelligence</h3>
+                <p>AI system predicting tariff changes using AWS Bedrock and Lambda.</p>
+            </div>
+
+            <div class="card">
+                <h3>IoT Smart Home Automation</h3>
+                <p>ESP32 + Matter protocol controlling lighting and appliances.</p>
+            </div>
+
+            <div class="card">
+                <h3>Spring Boot Microservices</h3>
+                <p>REST microservices powering mobile platforms.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="section container">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skill">
+
+            <p>Java / Kotlin / J2EE</p>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:90%"></div>
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <p>AWS Cloud/ Google Cloud</Canvas></p>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:85%"></div>
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <p>AI / LLM Systems</p>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:75%"></div>
+            </div>
+
+        </div>
+
+        <div class="skill">
+
+            <p>IoT Systems</p>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:80%"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="github">
+
+        <h2>GitHub Projects</h2>
+
+        <div id="repo-container"></div>
+
+    </section>
+    <section id="tech">
+
+        <h2>Technology Stack</h2>
+
+        <div class="tech-grid">
+
+            <div class="tech">Java/ J2EE</div>
+            <div class="tech">Kotlin</div>
+            <div class="tech">Paython</div>
+            <div class="tech">AWS - S3</div>
+            <div class="tech">Lambda, Grafana</div>
+            <div class="tech">Spring Boot</div>
+            <div class="tech">Struts 2.0</div>
+            <div class="tech">IoT</div>
+            <div class="tech">Microservices</div>
+            <div class="tech">Matter Protocol</div>
+            <div class="tech">ESP32, BLE, Wifi, Bluetooth</div>
+            <div class="tech">AI / LLM, </div>
+            <div class="tech"> Model, Genrative AI, Agentic AI</div>
+
+
+        </div>
+
+    </section>
+    <!-- CONTACT -->
+
+    <section id="contact" class="section container">
+
+        <h2 class="section-title">Contact</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <input type="text" placeholder="Name" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <textarea rows="5" placeholder="Message"></textarea>
+
+            <button class="btn">Send Message</button>
+
+        </form>
+
+        <p id="msg" style="text-align:center;margin-top:15px"></p>
+
+        <div id="chatbot">
+            <div id="chat-header">Ask About Sundeep</div>
+
+            <div id="chat-body"></div>
+
+            <input id="chat-input" placeholder="Ask about projects or experience...">
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>© 2026 Sundeep Sharma</p>
+
+    </footer>
 
     <script>
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
 
-        function openTab(tabName){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-links");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-links");
-            document.getElementById(tabName).classList.add("active-tab");
+        async function submitForm(e) {
+
+            e.preventDefault()
+
+            let name =
+                document.querySelector("#name").value
+
+            let email =
+                document.querySelector("#email").value
+
+            let message =
+                document.querySelector("#message").value
+
+            await fetch("https://your-api-url/contact", {
+
+                method: "POST",
+
+                body: JSON.stringify({
+
+                    name: name,
+                    email: email,
+                    message: message
+
+                })
+
+            })
+
+            alert("Message sent successfully")
+
         }
-    </script>    
 
-    </body>
+        /* COUNTER ANIMATION */
+
+        const counters = document.querySelectorAll('.counter')
+
+        counters.forEach(counter => {
+
+            counter.innerText = '0'
+
+            const update = () => {
+
+                const target = +counter.getAttribute('data-target')
+                const c = +counter.innerText
+
+                const inc = target / 200
+
+                if (c < target) {
+
+                    counter.innerText = `${Math.ceil(c + inc)}`
+                    setTimeout(update, 10)
+
+                } else {
+
+                    counter.innerText = target
+
+                }
+
+            }
+
+            update()
+
+        })
+
+
+        const API_URL = "https://your-api-gateway-url/chat";
+
+        document
+            .getElementById("chat-input")
+            .addEventListener("keypress", async function (e) {
+
+                if (e.key === "Enter") {
+
+                    let question = this.value
+
+                    let response = await fetch(API_URL, {
+                        method: "POST",
+                        body: JSON.stringify({ message: question })
+                    })
+
+                    let data = await response.json()
+
+                    document.getElementById("chat-body")
+                        .innerHTML += `<p><b>You:</b> ${question}</p>`
+
+                    document.getElementById("chat-body")
+                        .innerHTML += `<p><b>AI:</b> ${data.reply}</p>`
+
+                    this.value = ""
+
+                }
+
+            })
+
+        async function loadRepos() {
+
+            let response =
+                await fetch("https://api.github.com/users/sundeeprs/repos")
+
+            let repos = await response.json()
+
+            let container =
+                document.getElementById("repo-container")
+
+            repos.slice(0, 6).forEach(repo => {
+
+                container.innerHTML += `
+
+                    <div class="card">
+
+                    <h3>${repo.name}</h3>
+
+                    <p>${repo.description || "No description"}</p>
+
+                    <a href="${repo.html_url}" target="_blank">View Repo</a>
+
+                    </div>
+
+                    `
+
+            })
+
+        }
+
+        loadRepos()
+
+    </script>
+
+</body>
+
 </html>
